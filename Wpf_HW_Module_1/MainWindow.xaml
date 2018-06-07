@@ -12,45 +12,91 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label x:Name="Title"
+               Content="Title"
+               Height="50"
+               FontFamily="Arial"
+               FontSize="20"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
 			   Grid.Row="0"
-				Grid.Column="0"></Label>
+			   Grid.Column="0"/>
+        <TextBox Grid.Row="0"
+				Grid.Column="1"
+                Margin="10"
+                Padding="2"
+				Height="30"></TextBox>
         <Label x:Name="Description"
-			   Grid.Row="0"
-				Grid.Column="1"></Label>
+               Content="Description"
+               FontFamily="Arial"
+               FontSize="20"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+			   Grid.Row="1"
+			   Grid.Column="0"></Label>
+        <TextBox Grid.Row="1"
+				Grid.Column="1"
+                Margin="10"
+                Padding="2"
+				Height="30"></TextBox>
         <Label x:Name="ManagingEditor"
-			   Grid.Row="1"
+               Content="ManagingEditor"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontFamily="Arial"
+               FontSize="20"
+			    Grid.Row="2"
 				Grid.Column="0"></Label>
+        <TextBox Grid.Row="2"
+				Grid.Column="2"
+                Margin="10"
+                Padding="2"
+				Height="30"></TextBox>
         <Label x:Name="Generator"
-			   Grid.Row="1"
-				Grid.Column="1"></Label>
-        <Label x:Name="Pubdate"
-			   Grid.Row="2"
+               Content="Generator"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontFamily="Arial"
+               FontSize="20"
+			    Grid.Row="3"
 				Grid.Column="0"></Label>
+        <TextBox Grid.Row="3"
+				Grid.Column="3"
+                Margin="10"
+                Padding="2"
+				Height="30"></TextBox>
+        <Label x:Name="Pubdate"
+               Content="Pubdate"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontFamily="Arial"
+               FontSize="20"
+			    Grid.Row="4"
+				Grid.Column="0"></Label>
+        <TextBox Grid.Row="4"
+				Grid.Column="4"
+                Margin="10"
+                Padding="2"
+				Height="30"></TextBox>
         <Button Background="Red"
                 FontFamily="Italic"
                 Content="Получить информацию"
-				Grid.Row="2"
-				Grid.Column="0"
-                Margin="10 50 10 50"
+				Grid.Row="5"
+				Grid.Column="5"
+               Margin="20"
 				Click="BtnGet_Click"></Button>
         <Button Background="Green"
                 Content="Создать XML"
-				Grid.Row="3"
+				Grid.Row="5"
 				Grid.Column="0"
-                Margin="10 50 10 50"
+                Margin="20"
 				Click="BtnCreate_Click"></Button>
-        <TextBox  FlowDirection="LeftToRight"
-                 x:Name="path"
-				 Grid.Row="3"
-				 Grid.Column="1"
-                 Margin="10"
-                 Padding="2"
-				 Height="30"></TextBox>
     </Grid>
 </Window>
